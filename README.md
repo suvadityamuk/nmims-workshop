@@ -33,7 +33,7 @@ source .venv/bin/activate
 # If using Windows
 .venv/Scripts/activate
 
-pip3 install datasets accelerate transformers peft wandb gradio -qq
+pip3 install datasets accelerate transformers peft wandb bitsandbytes xformers gradio -qq
 ```
 
 ### Longer version
@@ -57,6 +57,16 @@ pip install accelerate
 Datasets will allow us to download and register our datasets in a few simple steps!
 ```
 pip install datasets
+```
+#### BitsAndBytes
+We use BitsAndBytes to perform QLoRA effectively.
+```
+pip install bitsandbytes
+```
+#### XFormers
+We use XFormers to get efficient attention model implementations and kernels.
+```
+pip install xformers
 ```
 #### Weights & Biases
 We will use WandB for quick experiment tracking. Make sure you create an account with WandB to log your runs correctly.
