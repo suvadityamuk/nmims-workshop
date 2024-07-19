@@ -33,7 +33,7 @@ source .venv/bin/activate
 # If using Windows
 .venv/Scripts/activate
 
-pip3 install datasets accelerate transformers peft wandb bitsandbytes xformers gradio -qq
+pip3 install datasets accelerate transformers peft wandb bitsandbytes xformers gradio trl -qq
 ```
 
 ### Longer version
@@ -77,6 +77,11 @@ pip install wandb
 We use Gradio to create a simple web-app that can act as a front-end for our LLM.
 ```
 pip install gradio
+```
+#### TRL
+We use TRL for getting reinforcement learning trainers.
+```
+pip install trl
 ```
 
 ## Google Cloud Platform
